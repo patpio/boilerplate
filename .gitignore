@@ -1,2 +1,4 @@
 .idea
 *.pyc
+migrations
+project_name/project_name.db
