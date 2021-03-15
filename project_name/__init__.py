@@ -13,7 +13,7 @@ def create_app():
     app = Flask(__name__)
 
     app.config['SQLALCHEMY_DATABASE_URI'] = f"sqlite:///{os.path.join(basedir, 'project_name.db')}"
-    app.config['SECRET_KEY'] = b'&f\x91vI\xe7\xb3\x93\xafk\xe7,\xebU`\x93'
+    app.config['SECRET_KEY'] = 'secret'  # change when creating a new project (use environment variable e.g.)
 
     from .views import bp_main
 
